@@ -4,11 +4,24 @@ project:
 
 website:
   title: "Data_Analysis"
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+  sidebar:
+    style: "docked"
+    search: true
+    format:
+      revealjs: 
+        menu: true
+        progress: true
+    contents:
+      - index.qmd
+      - section: "Basics"
+        contents:
+          - basics-part1.qmd
+          - basics-jupyter.qmd
+      - section: "Layout"
+        contents:
+          - layout.qmd
+          - layout-knitr.qmd
+          - layout-jupyter.qmd
 
 format:
   html:
